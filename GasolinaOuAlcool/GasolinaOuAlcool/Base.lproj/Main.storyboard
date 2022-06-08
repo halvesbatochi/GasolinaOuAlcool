@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GasolinaOuAlcool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nOf-HD-8OL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="106"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço do álcool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hip-tO-aKY">
+                                <rect key="frame" x="16" y="161" width="135" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.90588235289999997" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço da gasolina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-FC-YIK">
+                                <rect key="frame" x="204" y="161" width="155" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.90588235289999997" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. 2.99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UW4-57-WcH">
+                                <rect key="frame" x="16" y="195" width="135" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. 4.99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2BM-p0-3MK">
+                                <rect key="frame" x="224" y="195" width="135" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urn-6I-kk0">
+                                <rect key="frame" x="142.5" y="242" width="90" height="38"/>
+                                <color key="backgroundColor" red="0.37254902719999999" green="0.52156865600000002" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="Ib9-Dw-jgR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <action selector="calcularCombustivel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUJ-kG-PSE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite o preço primeiro!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozc-fm-tSj">
+                                <rect key="frame" x="16" y="325" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.58039215686274503" green="0.74117647058823533" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QOG-FC-YIK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hip-tO-aKY" secondAttribute="trailing" constant="8" symbolic="YES" id="1bU-te-7tg"/>
+                            <constraint firstItem="Ozc-fm-tSj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1p6-yS-d4E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ozc-fm-tSj" secondAttribute="trailing" constant="16" id="2gB-11-SXe"/>
+                            <constraint firstItem="2BM-p0-3MK" firstAttribute="trailing" secondItem="QOG-FC-YIK" secondAttribute="trailing" id="6IM-oe-Jiy"/>
+                            <constraint firstItem="Urn-6I-kk0" firstAttribute="top" secondItem="UW4-57-WcH" secondAttribute="bottom" constant="13" id="Agj-Gp-PBT"/>
+                            <constraint firstItem="nOf-HD-8OL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GBt-3k-Mmp"/>
+                            <constraint firstItem="UW4-57-WcH" firstAttribute="top" secondItem="hip-tO-aKY" secondAttribute="bottom" constant="10" id="GpL-Dn-PRb"/>
+                            <constraint firstItem="Urn-6I-kk0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PaZ-C6-X9Q"/>
+                            <constraint firstItem="hip-tO-aKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="U3u-JX-VQ7"/>
+                            <constraint firstItem="2BM-p0-3MK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UW4-57-WcH" secondAttribute="trailing" constant="8" symbolic="YES" id="UaC-YZ-fe5"/>
+                            <constraint firstItem="2BM-p0-3MK" firstAttribute="top" secondItem="QOG-FC-YIK" secondAttribute="bottom" constant="10" id="VOC-Iu-ABR"/>
+                            <constraint firstItem="nOf-HD-8OL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Va9-i1-jWy"/>
+                            <constraint firstItem="UW4-57-WcH" firstAttribute="leading" secondItem="hip-tO-aKY" secondAttribute="leading" id="eoW-na-QWb"/>
+                            <constraint firstItem="hip-tO-aKY" firstAttribute="top" secondItem="nOf-HD-8OL" secondAttribute="bottom" constant="35" id="nEe-9i-LwQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QOG-FC-YIK" secondAttribute="trailing" constant="16" id="pKM-rm-aUA"/>
+                            <constraint firstItem="Ozc-fm-tSj" firstAttribute="top" secondItem="Urn-6I-kk0" secondAttribute="bottom" constant="45" id="t4W-SM-KJK"/>
+                            <constraint firstItem="QOG-FC-YIK" firstAttribute="top" secondItem="nOf-HD-8OL" secondAttribute="bottom" constant="35" id="vBa-8Z-8Y8"/>
+                            <constraint firstItem="2BM-p0-3MK" firstAttribute="width" secondItem="UW4-57-WcH" secondAttribute="width" id="xsX-GP-RIs"/>
+                            <constraint firstItem="UW4-57-WcH" firstAttribute="width" secondItem="hip-tO-aKY" secondAttribute="width" id="yBA-O8-ucy"/>
+                            <constraint firstItem="nOf-HD-8OL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yHP-LD-zsk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="precoAlcool" destination="UW4-57-WcH" id="hjn-QH-vdh"/>
+                        <outlet property="precoGasolina" destination="2BM-p0-3MK" id="n0k-8S-fgA"/>
+                        <outlet property="resultadoLegenda" destination="Ozc-fm-tSj" id="TxQ-1s-BPB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="407" height="106"/>
+    </resources>
+</document>
